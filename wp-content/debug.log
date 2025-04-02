@@ -179,3 +179,4 @@ Error occurred at line 4117 in Function <code>handle_error</code>. Error message
 [02-Apr-2025 17:06:27 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php on line 217
 [02-Apr-2025 17:06:29 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
 [02-Apr-2025 17:06:40 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:47:42 UTC] PHP Warning:  Undefined variable $parent_theme_name in /workspaces/Assignment4/.wordpress/wp-content/mu-plugins/one-click-child-theme/templates/create_child_form.php on line 18
