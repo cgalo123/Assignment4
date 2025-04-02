@@ -42,17 +42,12 @@
     </url>
     <url>
         <loc>
-            http://localhost:8000/shop/
+            http://localhost:8000/products/
         </loc>
     </url>
     <url>
         <loc>
-            http://localhost:8000/?mailpoet_page=subscriptions
-        </loc>
-    </url>
-    <url>
-        <loc>
-            http://localhost:8000/?mailpoet_page=captcha
+            http://localhost:8000/products/sample-product-page/
         </loc>
     </url>
     <url>

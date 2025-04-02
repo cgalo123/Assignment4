@@ -127,3 +127,55 @@ Error occurred at line 4117 in Function <code>handle_error</code>. Error message
 [02-Apr-2025 16:39:33 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6011
 [02-Apr-2025 16:40:16 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6011
 [02-Apr-2025 16:40:25 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6011
+[02-Apr-2025 17:00:18 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>INSERT wp_actionscheduler_logs (action_id, message, log_date_gmt, log_date_local) VALUES (59, 'action canceled', '2025-04-02 17:00:18', '2025-04-02 17:00:18')</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: INSERT wp_actionscheduler_logs (action_id, message, log_date_gmt, log_date_local) VALUES (59, :param0 , :param1 , :param2 ) | parameters: action canceled, 2025-04-02 17:00:18, 2025-04-02 17:00:18</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4117 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 1 near "wp_actionscheduler_logs": syntax error.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /workspaces/Assignment4/.wordpress/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_DBLogger.php(80): WP_SQLite_DB->query('INSERT wp_actio...')
+#2 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(324): ActionScheduler_DBLogger->bulk_log_cancel_actions(Array)
+#3 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 /workspaces/Assignment4/.wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php(151): do_action('action_schedule...', Array)
+#6 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/vendor/woocommerce/action-scheduler/classes/abstracts/ActionScheduler_Store.php(144): ActionScheduler_Store->bulk_cancel_actions(Array)
+#7 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/vendor/woocommerce/action-scheduler/functions.php(142): ActionScheduler_Store->cancel_actions_by_group('mailpoet-cron')
+#8 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Cron/ActionScheduler/ActionScheduler.php(39): as_unschedule_all_actions('', Array, 'mailpoet-cron')
+#9 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Cron/DaemonActionSchedulerRunner.php(55): MailPoet\Cron\ActionScheduler\ActionScheduler->unscheduleAllCronActions()
+#10 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Config/Initializer.php(559): MailPoet\Cron\DaemonActionSchedulerRunner->deactivate()
+#11 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(324): MailPoet\Config\Initializer->runDeactivation(false)
+#12 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#13 /workspaces/Assignment4/.wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#14 /workspaces/Assignment4/.wordpress/wp-admin/includes/plugin.php(826): do_action('deactivate_mail...', false)
+#15 /workspaces/Assignment4/.wordpress/wp-admin/plugins.php(211): deactivate_plugins('mailpoet/mailpo...', false, false)
+#16 {main}</pre>
+ for query INSERT wp_actionscheduler_logs (action_id, message, log_date_gmt, log_date_local) VALUES (59, 'action canceled', '2025-04-02 17:00:18', '2025-04-02 17:00:18') made by deactivate_plugins, do_action('deactivate_mailpoet/mailpoet.php'), WP_Hook->do_action, WP_Hook->apply_filters, MailPoet\Config\Initializer->runDeactivation, MailPoet\Cron\DaemonActionSchedulerRunner->deactivate, MailPoet\Cron\ActionScheduler\ActionScheduler->unscheduleAllCronActions, as_unschedule_all_actions, ActionScheduler_Store->cancel_actions_by_group, ActionScheduler_Store->bulk_cancel_actions, do_action('action_scheduler_bulk_cancel_actions'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_DBLogger->bulk_log_cancel_actions, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[02-Apr-2025 17:00:42 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[02-Apr-2025 17:05:19 UTC] PHP Fatal error:  Out of memory (allocated 46137344) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php on line 217
+[02-Apr-2025 17:05:28 UTC] PHP Fatal error:  Out of memory (allocated 37748736) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:05:38 UTC] PHP Fatal error:  Out of memory (allocated 33554432) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:05:41 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1604
+[02-Apr-2025 17:05:41 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1690
+[02-Apr-2025 17:05:48 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:05:57 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1690
+[02-Apr-2025 17:05:58 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:05:59 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php on line 211
+[02-Apr-2025 17:06:04 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1604
+[02-Apr-2025 17:06:08 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:06:18 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:06:19 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:06:19 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1690
+[02-Apr-2025 17:06:26 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php on line 211
+[02-Apr-2025 17:06:27 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php on line 217
+[02-Apr-2025 17:06:29 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
+[02-Apr-2025 17:06:40 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
