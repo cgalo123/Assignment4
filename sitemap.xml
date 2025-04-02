@@ -1,0 +1,33 @@
+<?xml?>
+<urlset>
+    <url>
+        <loc>
+            http://localhost:8000/beginners-guide-to-golf-everything-you-need-to-know/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/best-clubs-for-each-skill-level/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/sample-page/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/category/uncategorized/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/author/cgalo123/
+        </loc>
+    </url>
+</urlset>
