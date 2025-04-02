@@ -12,12 +12,32 @@
     </url>
     <url>
         <loc>
+            http://localhost:8000/how-to-improve-your-swing/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/my-favourite-courses-that-you-should-try/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/common-mistakes/
+        </loc>
+    </url>
+    <url>
+        <loc>
             http://localhost:8000/
         </loc>
     </url>
     <url>
         <loc>
-            http://localhost:8000/sample-page/
+            http://localhost:8000/about/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/contact-me/
         </loc>
     </url>
     <url>
