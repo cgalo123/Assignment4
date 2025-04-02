@@ -1,2 +1,127 @@
 [02-Apr-2025 16:22:50 UTC] PHP Fatal error:  Out of memory (allocated 37748736) (tried to allocate 8192 bytes) in /workspaces/Assignment4/.wordpress/wp-includes/class-wp-image-editor-gd.php on line 624
 [02-Apr-2025 16:23:33 UTC] PHP Fatal error:  Out of memory (allocated 33554432) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/post.php on line 328
+[02-Apr-2025 16:33:49 UTC] PHP Warning:  Undefined variable $parent_theme_name in /workspaces/Assignment4/.wordpress/wp-content/mu-plugins/one-click-child-theme/templates/create_child_form.php on line 18
+[02-Apr-2025 16:35:41 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>
+          ALTER TABLE `wp_mailpoet_statistics_clicks`
+          DROP INDEX `newsletter_id_subscriber_id`
+        </p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: DROP INDEX &quot;wp_mailpoet_statistics_clicks__newsletter_id_subscriber_id&quot;
+         | (no parameters)</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4117 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 1 no such index: wp_mailpoet_statistics_clicks__newsletter_id_subscriber_id.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /workspaces/Assignment4/.wordpress/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrations/Db/Migration_20221028_105818.php(720): WP_SQLite_DB->query('\n          ALTE...')
+#2 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrations/Db/Migration_20221028_105818.php(90): MailPoet\Migrations\Db\Migration_20221028_105818->removeDeprecatedStatisticsIndexes()
+#3 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrator/Runner.php(35): MailPoet\Migrations\Db\Migration_20221028_105818->run()
+#4 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrator/Migrator.php(53): MailPoet\Migrator\Runner->runMigration('Migration_20221...', 'db')
+#5 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Config/Activator.php(78): MailPoet\Migrator\Migrator->run()
+#6 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Config/Activator.php(60): MailPoet\Config\Activator->processActivate()
+#7 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Config/Initializer.php(313): MailPoet\Config\Activator->activate()
+#8 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(324): MailPoet\Config\Initializer->runActivator(false)
+#9 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#10 /workspaces/Assignment4/.wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#11 /workspaces/Assignment4/.wordpress/wp-admin/includes/plugin.php(703): do_action('activate_mailpo...', false)
+#12 /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/src/Admin/PluginsHelper.php(470): activate_plugin('mailpoet/mailpo...')
+#13 /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/src/Admin/API/Plugins.php(375): Automattic\WooCommerce\Admin\PluginsHelper::activate_plugins(Array)
+#14 /workspaces/Assignment4/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): Automattic\WooCommerce\Admin\API\Plugins->activate_plugins(Object(WP_REST_Request))
+#15 /workspaces/Assignment4/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/plugi...', Array, NULL)
+#16 /workspaces/Assignment4/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#17 /workspaces/Assignment4/.wordpress/wp-includes/rest-api.php(449): WP_REST_Server->serve_request('/wc-admin/plugi...')
+#18 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#19 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#20 /workspaces/Assignment4/.wordpress/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#21 /workspaces/Assignment4/.wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#22 /workspaces/Assignment4/.wordpress/wp-includes/class-wp.php(813): WP->parse_request('')
+#23 /workspaces/Assignment4/.wordpress/wp-includes/functions.php(1336): WP->main('')
+#24 /workspaces/Assignment4/.wordpress/wp-blog-header.php(16): wp()
+#25 /workspaces/Assignment4/.wordpress/index.php(17): require('/workspaces/Ass...')
+#26 {main}</pre>
+ for query 
+          ALTER TABLE `wp_mailpoet_statistics_clicks`
+          DROP INDEX `newsletter_id_subscriber_id`
+         made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, Automattic\WooCommerce\Admin\API\Plugins->activate_plugins, Automattic\WooCommerce\Admin\PluginsHelper::activate_plugins, activate_plugin, do_action('activate_mailpoet/mailpoet.php'), WP_Hook->do_action, WP_Hook->apply_filters, MailPoet\Config\Initializer->runActivator, MailPoet\Config\Activator->activate, MailPoet\Config\Activator->processActivate, MailPoet\Migrator\Migrator->run, MailPoet\Migrator\Runner->runMigration, MailPoet\Migrations\Db\Migration_20221028_105818->run, MailPoet\Migrations\Db\Migration_20221028_105818->removeDeprecatedStatisticsIndexes, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[02-Apr-2025 16:35:41 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>
+          ALTER TABLE `wp_mailpoet_statistics_opens`
+          DROP INDEX `newsletter_id_subscriber_id`
+        </p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: DROP INDEX &quot;wp_mailpoet_statistics_opens__newsletter_id_subscriber_id&quot;
+         | (no parameters)</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4117 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 1 no such index: wp_mailpoet_statistics_opens__newsletter_id_subscriber_id.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /workspaces/Assignment4/.wordpress/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrations/Db/Migration_20221028_105818.php(720): WP_SQLite_DB->query('\n          ALTE...')
+#2 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrations/Db/Migration_20221028_105818.php(90): MailPoet\Migrations\Db\Migration_20221028_105818->removeDeprecatedStatisticsIndexes()
+#3 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrator/Runner.php(35): MailPoet\Migrations\Db\Migration_20221028_105818->run()
+#4 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Migrator/Migrator.php(53): MailPoet\Migrator\Runner->runMigration('Migration_20221...', 'db')
+#5 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Config/Activator.php(78): MailPoet\Migrator\Migrator->run()
+#6 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Config/Activator.php(60): MailPoet\Config\Activator->processActivate()
+#7 /workspaces/Assignment4/.wordpress/wp-content/plugins/mailpoet/lib/Config/Initializer.php(313): MailPoet\Config\Activator->activate()
+#8 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(324): MailPoet\Config\Initializer->runActivator(false)
+#9 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#10 /workspaces/Assignment4/.wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#11 /workspaces/Assignment4/.wordpress/wp-admin/includes/plugin.php(703): do_action('activate_mailpo...', false)
+#12 /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/src/Admin/PluginsHelper.php(470): activate_plugin('mailpoet/mailpo...')
+#13 /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/src/Admin/API/Plugins.php(375): Automattic\WooCommerce\Admin\PluginsHelper::activate_plugins(Array)
+#14 /workspaces/Assignment4/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(1292): Automattic\WooCommerce\Admin\API\Plugins->activate_plugins(Object(WP_REST_Request))
+#15 /workspaces/Assignment4/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(1125): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/plugi...', Array, NULL)
+#16 /workspaces/Assignment4/.wordpress/wp-includes/rest-api/class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#17 /workspaces/Assignment4/.wordpress/wp-includes/rest-api.php(449): WP_REST_Server->serve_request('/wc-admin/plugi...')
+#18 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#19 /workspaces/Assignment4/.wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#20 /workspaces/Assignment4/.wordpress/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#21 /workspaces/Assignment4/.wordpress/wp-includes/class-wp.php(418): do_action_ref_array('parse_request', Array)
+#22 /workspaces/Assignment4/.wordpress/wp-includes/class-wp.php(813): WP->parse_request('')
+#23 /workspaces/Assignment4/.wordpress/wp-includes/functions.php(1336): WP->main('')
+#24 /workspaces/Assignment4/.wordpress/wp-blog-header.php(16): wp()
+#25 /workspaces/Assignment4/.wordpress/index.php(17): require('/workspaces/Ass...')
+#26 {main}</pre>
+ for query 
+          ALTER TABLE `wp_mailpoet_statistics_opens`
+          DROP INDEX `newsletter_id_subscriber_id`
+         made by require('wp-blog-header.php'), wp, WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook->do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, Automattic\WooCommerce\Admin\API\Plugins->activate_plugins, Automattic\WooCommerce\Admin\PluginsHelper::activate_plugins, activate_plugin, do_action('activate_mailpoet/mailpoet.php'), WP_Hook->do_action, WP_Hook->apply_filters, MailPoet\Config\Initializer->runActivator, MailPoet\Config\Activator->activate, MailPoet\Config\Activator->processActivate, MailPoet\Migrator\Migrator->run, MailPoet\Migrator\Runner->runMigration, MailPoet\Migrations\Db\Migration_20221028_105818->run, MailPoet\Migrations\Db\Migration_20221028_105818->removeDeprecatedStatisticsIndexes, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[02-Apr-2025 16:38:02 UTC] PHP Fatal error:  Out of memory (allocated 119537664) (tried to allocate 4096 bytes) in /workspaces/Assignment4/.wordpress/wp-includes/functions.php on line 4946
+[02-Apr-2025 16:38:02 UTC] PHP Fatal error:  Out of memory (allocated 119537664) (tried to allocate 4096 bytes) in /workspaces/Assignment4/.wordpress/wp-includes/functions.php on line 4946
+[02-Apr-2025 16:38:02 UTC] PHP Fatal error:  Out of memory (allocated 104857600) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6015
+[02-Apr-2025 16:38:02 UTC] PHP Fatal error:  Out of memory (allocated 67108864) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6015
+[02-Apr-2025 16:38:02 UTC] PHP Fatal error:  Out of memory (allocated 50331648) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4783
+[02-Apr-2025 16:38:03 UTC] PHP Fatal error:  Out of memory (allocated 41943040) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6015
+[02-Apr-2025 16:38:03 UTC] PHP Fatal error:  Out of memory (allocated 35651584) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4823
+[02-Apr-2025 16:38:03 UTC] PHP Fatal error:  Out of memory (allocated 33554432) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6015
+[02-Apr-2025 16:38:03 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6007
+[02-Apr-2025 16:38:04 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6007
+[02-Apr-2025 16:38:04 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6007
+[02-Apr-2025 16:38:04 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6007
+[02-Apr-2025 16:38:05 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6015
+[02-Apr-2025 16:38:11 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4783
+[02-Apr-2025 16:38:12 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6011
+[02-Apr-2025 16:38:13 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6015
+[02-Apr-2025 16:38:21 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4783
+[02-Apr-2025 16:38:26 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6011
+[02-Apr-2025 16:38:26 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6015
+[02-Apr-2025 16:38:31 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4783
+[02-Apr-2025 16:38:42 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4783
+[02-Apr-2025 16:38:47 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4787
+[02-Apr-2025 16:38:49 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 4499
+[02-Apr-2025 16:39:33 UTC] PHP Fatal error:  Out of memory (allocated 31457280) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-content/plugins/woocommerce/vendor/composer/jetpack_autoload_classmap.php on line 6011
