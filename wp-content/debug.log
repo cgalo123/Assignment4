@@ -180,3 +180,142 @@ Error occurred at line 4117 in Function <code>handle_error</code>. Error message
 [02-Apr-2025 17:06:29 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
 [02-Apr-2025 17:06:40 UTC] PHP Fatal error:  Out of memory (allocated 29360128) (tried to allocate 2097152 bytes) in /workspaces/Assignment4/.wordpress/wp-admin/includes/class-wp-list-table.php on line 1684
 [02-Apr-2025 17:47:42 UTC] PHP Warning:  Undefined variable $parent_theme_name in /workspaces/Assignment4/.wordpress/wp-content/mu-plugins/one-click-child-theme/templates/create_child_form.php on line 18
+[02-Apr-2025 17:59:12 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-admin/admin-ajax.php(22): require_once('/workspaces/Ass...')
+#6 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:16 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-admin/admin-ajax.php(22): require_once('/workspaces/Ass...')
+#6 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:19 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-blog-header.php(13): require_once('/workspaces/Ass...')
+#6 /workspaces/Assignment4/.wordpress/index.php(17): require('/workspaces/Ass...')
+#7 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:26 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-admin/admin-ajax.php(22): require_once('/workspaces/Ass...')
+#6 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:36 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-admin/admin-ajax.php(22): require_once('/workspaces/Ass...')
+#6 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:43 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-blog-header.php(13): require_once('/workspaces/Ass...')
+#6 /workspaces/Assignment4/.wordpress/index.php(17): require('/workspaces/Ass...')
+#7 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:47 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 17:59:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-admin/admin-ajax.php(22): require_once('/workspaces/Ass...')
+#6 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:18:56 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:18:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-blog-header.php(13): require_once('/workspaces/Ass...')
+#6 /workspaces/Assignment4/.wordpress/index.php(17): require('/workspaces/Ass...')
+#7 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:21:15 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:21:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-blog-header.php(13): require_once('/workspaces/Ass...')
+#6 /workspaces/Assignment4/.wordpress/index.php(17): require('/workspaces/Ass...')
+#7 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:21:20 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:21:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-admin/admin.php(34): require_once('/workspaces/Ass...')
+#6 /workspaces/Assignment4/.wordpress/wp-admin/index.php(10): require_once('/workspaces/Ass...')
+#7 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:21:36 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:21:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-admin/admin.php(34): require_once('/workspaces/Ass...')
+#6 /workspaces/Assignment4/.wordpress/wp-admin/index.php(10): require_once('/workspaces/Ass...')
+#7 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:24:26 UTC] PHP Warning:  require(/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php): Failed to open stream: No such file or directory in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
+[02-Apr-2025 22:24:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-assets/src/class-assets.php' (include_path='.:') in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php:102
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ14_4_1\al5_0_2\PHP_Autoloader::load_class('Automattic\\Jetp...')
+#1 /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/jetpack.php(145): method_exists('\\Automattic\\Jet...', 'alias_textdomai...')
+#2 /workspaces/Assignment4/.wordpress/wp-settings.php(526): include_once('/workspaces/Ass...')
+#3 /workspaces/Assignment4/.wordpress/wp-config.php(107): require_once('/workspaces/Ass...')
+#4 /workspaces/Assignment4/.wordpress/wp-load.php(50): require_once('/workspaces/Ass...')
+#5 /workspaces/Assignment4/.wordpress/wp-blog-header.php(13): require_once('/workspaces/Ass...')
+#6 /workspaces/Assignment4/.wordpress/index.php(17): require('/workspaces/Ass...')
+#7 {main}
+  thrown in /workspaces/Assignment4/.wordpress/wp-content/plugins/jetpack/vendor/jetpack-autoloader/class-php-autoloader.php on line 102
